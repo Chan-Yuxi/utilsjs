@@ -7,6 +7,9 @@
     "url": "https://github.com/Chan-Yuxi/utilsjs/issues",
     "email": "2438149743@qq.com"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
@@ -17,7 +20,8 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc && rollup -c"
+    "build": "tsc && rollup -c",
+    "publish": "pnpm build && pnpm publish"
   },
   "keywords": [
     "serialize"

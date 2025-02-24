@@ -3,6 +3,8 @@
   "compilerOptions": {
     "target": "es6",
     "module": "esnext",
+
+    "noEmit": true,
     "useDefineForClassFields": true
   },
   "include": ["src/**/*.ts"]

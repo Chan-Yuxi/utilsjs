@@ -7,17 +7,17 @@
     "url": "https://github.com/Chan-Yuxi/utilsjs/issues",
     "email": "2438149743@qq.com"
   },
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
   "type": "module",
   "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./data-structure": "./dist/data-structure.js"
+    ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "tsc && rollup -c"
   },
   "keywords": [
     "serialize"
@@ -26,6 +26,11 @@
   "license": "ISC",
   "packageManager": "pnpm@10.4.1",
   "devDependencies": {
-    "rollup": "^4.34.8"
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@tsconfig/recommended": "^1.0.8",
+    "rollup": "^4.34.8",
+    "rollup-plugin-delete": "^3.0.0",
+    "tslib": "^2.8.1"
   }
 }

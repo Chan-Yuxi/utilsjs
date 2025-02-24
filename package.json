@@ -2,9 +2,9 @@
   "name": "@chanyuxi/utils",
   "version": "1.0.0",
   "description": "Collection of practical tools for personal use",
-  "homepage": "https://github.com/Chan-Yuxi/utils#readme",
+  "homepage": "https://github.com/Chan-Yuxi/utilsjs#readme",
   "bugs": {
-    "url": "https://github.com/Chan-Yuxi/utils/issues",
+    "url": "https://github.com/Chan-Yuxi/utilsjs/issues",
     "email": "2438149743@qq.com"
   },
   "files": [

@@ -4,7 +4,10 @@
     "target": "es6",
     "module": "esnext",
 
-    "noEmit": true,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "emitDeclarationOnly": true,
+
     "useDefineForClassFields": true
   },
   "include": ["src/**/*.ts"]

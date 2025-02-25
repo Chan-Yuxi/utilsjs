@@ -1,1 +1,1 @@
-export * from "./data-structure/index";
+export * from "./data-structure/queue";

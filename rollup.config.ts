@@ -17,7 +17,9 @@ export default defineConfig({
     plugins: [
         del({ targets: "dist/*" }),
         typescript(),
-        terser(),
+        terser({
+            keep_classnames: true,
+        }),
         emitDeclarations([{ name: "data-structure", path: "./src/data-structure/types.d.ts" }]),
     ],
 });

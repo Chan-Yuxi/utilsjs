@@ -1,16 +1,12 @@
 export class Queue<T> {
     private data: T[] = [];
 
-    peek(): T {
-        return this.data[0];
+    peek(): T | null {
+        return this.data[0] ?? null;
     }
 
     pop(): T | null {
-        if (this.data.length === 0) {
-            return null;
-        } else {
-            return this.data.shift()!;
-        }
+        return this.data.shift() ?? null;
     }
 
     push(value: T): void {

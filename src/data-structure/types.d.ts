@@ -2,9 +2,10 @@ export interface ITreeNode<T> {
     value: T;
 }
 
-export class BinaryTreeNode<T> extends ITreeNode<T> {
-    l: IBinaryTreeNode<T> | null;
-    r: IBinaryTreeNode<T> | null;
+export class BinaryTreeNode<T> implements ITreeNode<T> {
+    value: T;
+    l: BinaryTreeNode<T> | null;
+    r: BinaryTreeNode<T> | null;
 }
 
 export class Queue<T> {

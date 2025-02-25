@@ -1,11 +1,4 @@
-interface IQueue<T> {
-    peek(): T | null;
-    pop(): T | null;
-    push(value: T): void;
-    size(): number;
-}
-
-export class Queue<T> implements IQueue<T> {
+export class Queue<T> {
     private data: T[] = [];
 
     peek(): T {

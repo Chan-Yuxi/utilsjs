@@ -1,20 +1,20 @@
-interface ITreeNode<T> {
+export interface ITreeNode<T> {
     value: T;
 }
 
-interface IBinaryTreeNode<T> extends ITreeNode<T> {
-    l: BinaryTreeNode<T> | null;
-    r: BinaryTreeNode<T> | null;
+export class BinaryTreeNode<T> extends ITreeNode<T> {
+    l: IBinaryTreeNode<T> | null;
+    r: IBinaryTreeNode<T> | null;
 }
 
-interface IQueue<T> {
+export class Queue<T> {
     peek(): T | null;
     pop(): T | null;
     push(value: T): void;
     size(): number;
 }
 
-interface IStack<T> {
+export class Stack<T> {
     peek(): T | null;
     pop(): T | null;
     push(value: T): void;

@@ -3,16 +3,7 @@
     "compilerOptions": {
         "target": "es6",
         "module": "esnext",
-        "moduleResolution": "bundler",
-
-        "declaration": true,
-        "declarationDir": "dist/types",
-        "emitDeclarationOnly": true,
-        
-        "noUnusedParameters": true,
-        "noImplicitReturns": true,
-
-        "useDefineForClassFields": true
+        "moduleResolution": "bundler"
     },
-    "include": ["src/**/*.ts"]
+    "include": ["src", "build", "rollup.config.ts"]
 }

@@ -16,22 +16,26 @@
   "publishConfig": {
     "access": "public"
   },
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "type": "module",
   "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/index.js",
+    "./data-structure": "./dist/data-structure.js",
+    "./data-structure.js": "./dist/data-structure.js"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c rollup.config.ts --configPlugin typescript",
     "test": "mocha"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.2",
     "@tsconfig/recommended": "^1.0.8",
+    "@types/node": "^22.13.5",
     "mocha": "^11.1.0",
     "prettier": "3.5.2",
     "rollup": "^4.34.8",
